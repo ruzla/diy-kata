@@ -1,5 +1,13 @@
+//simple and concise code.
+//Could have used a ternary operator:
+// return boolean ? 'Yes' : 'No';
+
 const booleanToWord = (boolean) => {
- return (boolean === true ? 'Yes' : 'No');
+  if (boolean) {
+    return 'Yes';
+  } else {
+    return 'No';
+  }
 }
 
 module.exports = booleanToWord;

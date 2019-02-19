@@ -1,16 +1,20 @@
-const { humanCatDogYears } = require('../src');
+//Poor test coverage here.
+//I added a test that fails with your current code.
+//It's important to test more than one outcome when writing tests
+const {
+  humanCatDogYears
+} = require('../src');
 
-describe('humanCatDogYears', () => {
-    it ('cat and dog years when passed 5 human years', () => {
-        expect(humanCatDogYears(5)).toEqual([5, 36, 39])
-    });
+describe('humanCatDogYears returns converted number in the array of human cat and dog years', () => {
+  it('function returns array -> numbers converted to the correct ages', () => {
+    expect(humanCatDogYears(10)).toEqual([10, 56, 64]);
 
-    it ('cat and dog years when passed 10 human years', () => {
-        expect(humanCatDogYears(10)).toEqual([10, 56, 64])
-    });
-    
-    it ('cat and dog years when passed 15 human years', () => {
-        expect(humanCatDogYears(15)).toEqual([15, 76, 89])
-    });    
-})
-// Look Ma, no handlebars!!!
+    //Added extra test
+    expect(humanCatDogYears(0)).toEqual([0, 0, 0]);
+
+  });
+});
+
+describe('', () => {
+
+});
